@@ -31,7 +31,7 @@ if(class(testing$Date) != "Date") {
 # a datetime object
 testing.sub <- subset(testing, testing$Date == "2007-02-01" | testing$Date == "2007-02-02")
 testing.sub$Time <- hms(testing.sub$Time)
-testing.sub$Date.Time <- testing.sub$Date + testing.sub$
+testing.sub$Date.Time <- testing.sub$Date + testing.sub$Time
 
 png(filename = "plot2.png", 
     bg = "white", 
